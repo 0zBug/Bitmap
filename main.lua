@@ -1,7 +1,11 @@
 
-local require = loadstring(game:HttpGet("http://raw.github.com/0zBug/-/main/-"))
+local require = loadstring(game:HttpGet("http://🐛.glitch.me"))
 
-return {
-    ["Encode"] = require("BmpEncoder"),
-    ["Decode"] = require("BmpDecoder")
-}
+return setmetatable({
+    ["encode"] = require("BmpEncoder"),
+    ["decode"] = require("BmpDecoder")
+}, {
+    __index = function(self, index)
+        return rawget(self, string.lower(index))
+    end
+})
