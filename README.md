@@ -2,7 +2,7 @@
 A module that can read and write raw bmp image files. 
 # Example
 ```lua
-local require = loadstring(game:HttpGet("http://raw.github.com/0zBug/-/main/-"))
+local require = loadstring(game:HttpGet("http://🐛.glitch.me"))
 
 local Bitmap = require("Bitmap")
 
